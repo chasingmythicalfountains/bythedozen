@@ -327,13 +327,13 @@ function PricingCard({ title, items, note, delay = 0 }) {
       <div className="flex flex-col gap-4">
         {items.map((item, i) => (
           <div key={i} className="flex justify-between items-baseline gap-4">
-            <span style={{ fontFamily: SANS, color: "rgba(246,240,230,0.85)" }} className="text-sm">{item.name}</span>
+            <span style={{ fontFamily: SANS, color: INK }} className="text-sm">{item.name}</span>
             <span style={{ fontFamily: SERIF, color: COPPER }} className="text-xl italic whitespace-nowrap">${item.price}</span>
           </div>
         ))}
       </div>
       {note && (
-        <p style={{ fontFamily: SANS, color: "rgba(246,240,230,0.5)" }} className="text-xs mt-6 italic">{note}</p>
+        <p style={{ fontFamily: SANS, color: "rgba(28,23,19,0.6)" }} className="text-xs mt-6 italic">{note}</p>
       )}
     </div>
   );
